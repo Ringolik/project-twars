@@ -1,0 +1,246 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<title>{page_title}</title> 
+		<meta http-equiv="Content-Type" />
+		<meta name="description" content="Tribal Wars is a browserbased online game. Every player controls a small village, striving for power and glory." /> 
+		<meta name="keywords" content="Browser game, Browsergame, Online Game, Online Games, Multiplayer, free, Strategy, Middle Age" /> 
+		<script type="text/javascript" src="merged/game.js?1299227938"></script> 
+ 
+		<script type="text/javascript" src="js/start/index.js?1291624865"></script> 
+ 
+		<script type="text/javascript" src="js/start/Register.js?1292494185"></script> 
+ 
+		<link rel="stylesheet" type="text/css" href="merged/index.css?1299227938" /> 
+ 
+						<link rel="alternate" type="application/rss+xml" title="Tribal Wars - News" href="http://www.tribalwars.net/news.php?type=rss2.0" /> 
+ 
+	</head> 
+ 
+	<body> 
+			<div id="gamebar"> 
+			<div id="gamebar_content"> 
+				{motto}
+				</div> 
+		</div> 
+ 
+		<div id="index_body"> 
+			<div id="main"> 
+						<div id="header"> 
+				<h1><a href="index.php" style="background:url(graphic/lang/en/bg-logo.jpg) no-repeat 100% 0;">Tribal Wars - The browser game</a></h1> 
+				<div class="navigation"> 
+					<div class="navigation-holder"> 
+						<div class="navigation-wrapper"> 
+							{navigation}
+						</div> 
+				</div> 
+				</div> 
+				
+{main}
+					</div> 
+				</div><!-- content --> 
+																		
+			
+							<div class="closure"> 
+				{footer}
+                			</div> 
+			</div><!-- main --> 
+ 
+			<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1897727-3']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+ 
+</script>			<div id="screenshot" style="display:none" onclick="Index.hide_screenshot();"> 
+				<div id="screenshot_image"></div> 
+			</div> 
+		</div> 
+				<script language="JavaScript" type="text/javascript"> 
+	<!--
+ 
+	// Stores the unique id of the user
+	var sTid = '';
+ 
+	// Stores the ref_id from cookie
+	var sOldRefId = '';
+ 
+	// Stores the ref_url from cookie
+	var sOldRefUrl = '';
+ 
+	// Stores whether the portal_ref_session cookie is already set
+	var bPortalRefSessionExists = false;
+ 
+	// Stores the domain name (like 'tribalwars.net')
+	var domain = document.domain.replace(/www\./i, '').toLowerCase();
+ 
+	// Add trim method to strings
+	String.prototype.trim = function() {
+		return this.replace(/^\s+|\s+$/g,"");
+	}
+ 
+	var aCookies = document.cookie.split(';');
+ 
+	for(var i=0; i<aCookies.length; i++) {
+		var aCookie = aCookies[i].split('=');
+ 
+		// Check if the tid cookie is already set
+		if(aCookie[0].trim() == 'portal_tid') {
+			sTid = aCookie[1].trim();
+		}
+ 
+		// Check if the portal_ref_session cookie is already set
+		if(aCookie[0].trim() == 'portal_ref_session') {
+			bPortalRefSessionExists = true;
+		}
+ 
+		// Check if the portal_ref_id cookie is already set
+		if(aCookie[0].trim() == 'portal_ref_id') {
+			sOldRefId = aCookie[1].trim();
+		}
+ 
+		// Check if the portal_ref_url cookie is already set
+		if(aCookie[0].trim() == 'portal_ref_url') {
+			sOldRefUrl = aCookie[1].trim();
+		}
+	}
+ 
+	// Extract ref param, k_param and banner_id from query string
+	var sQueryString = location.href.split('?')[1];
+	var sRef = '';
+	var sK_Param = '';
+	var iBannerId = 0;
+	var sPublisherId = '';
+	var sExternalParam = '';
+	var iTduid = 0;
+	if(sQueryString != undefined) {
+		var aQueryString = sQueryString.split('&');
+ 
+		for(var i=0; i<aQueryString.length; i++) {
+			var aParam = aQueryString[i].split('=');
+ 
+			if(aParam[0].trim() == 'ref') {
+				sRef = aParam[1].trim();
+			}
+ 
+			// Alias for ref
+			if(aParam[0].trim() == 'ig_ref') {
+				sRef = aParam[1].trim();
+			}
+ 
+			if(aParam[0].trim() == 'k') {
+				sK_Param = aParam[1].trim();
+			}
+ 
+			if(aParam[0].trim() == 'bid') {
+				iBannerId = aParam[1].trim();
+			}
+ 
+			// This is an alias
+			if(aParam[0].trim() == 'pid') {
+				sPublisherId = aParam[1].trim();
+			}
+ 
+			// Overwrites pid
+			if(aParam[0].trim() == 'publisher_id') {
+				sPublisherId = aParam[1].trim();
+			}
+ 
+			if(aParam[0].trim() == 'external_param') {
+				sExternalParam = aParam[1].trim();
+			}
+ 
+			if(aParam[0].trim() == 'tduid') {
+				iTduid = aParam[1].trim();
+			}
+		}
+	}
+ 
+	// Set portal_tid cookie if not already set
+	if(!sTid.length) {
+		var oExpirationDate = new Date;
+		oExpirationDate.setMonth(oExpirationDate.getMonth()+24);
+		var sUniqueId = new Date().getTime() + '-' + Math.round(Math.random()*Math.pow(10,5));
+		document.cookie = "portal_tid=" + sUniqueId + '; expires='+oExpirationDate+'; domain=.'+domain+'; path=/'
+ 
+		sTid = sUniqueId;
+	}
+ 
+	// Check if the referer is like the domain (e.g. www.die-staemme.de)
+	var referrerEqualsDomain = false;
+ 
+	// Create a clean referrer
+	var cleanReferrer = document.referrer.toLowerCase().replace(/(http|https):\/\//, "");
+ 
+	// Check if the document.referrer starts with the document.domain. If yes, the referrer equals the domain.
+	if((cleanReferrer.indexOf(document.domain) == 0) || (cleanReferrer == "die-staemme.myvideo.de/")) {
+		referrerEqualsDomain = true;
+	}
+ 
+	// Store referrer on cookie (if its not die-staemme.de or the like)
+	if(!referrerEqualsDomain && document.referrer != '') {
+		document.cookie = "portal_ref_url="+document.referrer+"; domain=."+domain+'; path=/';
+	}
+ 
+	// Store ref_id on cookie
+	if(sRef.length) {
+		document.cookie = "portal_ref_id="+sRef+"; domain=."+domain+'; path=/';
+		document.cookie = "ref="+sRef+"; domain=."+domain+"; path=/";
+	}
+ 
+	// Store banner_id on cookie
+	if(iBannerId.length) {
+		document.cookie = "portal_banner_id="+iBannerId+"; domain=."+domain+'; path=/';
+	}
+ 
+	// Store k_param on cookie
+	if(sK_Param.length) {
+		document.cookie = "portal_k_param="+sK_Param+"; domain=."+domain+'; path=/';
+	}
+ 
+	// Store publisher_id on cookie
+	if(sPublisherId.length) {
+		document.cookie = "portal_publisher_id="+sPublisherId+"; domain=."+domain+'; path=/';
+	}
+ 
+	// Store external_param on cookie
+	if(sExternalParam.length) {
+		document.cookie = "portal_external_param="+sExternalParam+"; domain=."+domain+'; path=/';
+	}
+ 
+	// Store TDUID
+	if(iTduid.length) {
+		document.cookie = "portal_tduid="+iTduid+"; domain=."+domain+'; path=/';
+	}
+ 
+	// Call portal pixel if referrer or ref_id given
+	// Only do that if there was no portal_ref_session cookie set before (avoid double entries if F5 pressed)
+	if((document.referrer != '' || sRef.length) && (!bPortalRefSessionExists || sOldRefId != sRef || sOldRefUrl != document.referrer) && !referrerEqualsDomain) {
+		// Set cookie if ref param on url or referrer given
+		document.cookie = "portal_ref_session=1; domain=."+domain+'; path=/';
+ 
+		// Send request to portal (*1)
+	}
+ 
+	var aCookies = document.cookie.split(';');
+	var aPortalData = [];
+	for(var i=0; i<aCookies.length; i++) {
+		var cname = aCookies[i].split('=')[0].trim();
+		if((cname.split('_')[0].trim() == 'portal') && cname != 'portal_data') {
+			aPortalData.push(aCookies[i].trim());
+		}
+	}
+ 
+	document.cookie = "portal_data="+aPortalData.join('&')+"; domain=."+domain+'; path=/';
+	//-->
+</script> 
+	</body> 
+</html> 

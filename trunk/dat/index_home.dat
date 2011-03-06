@@ -1,0 +1,87 @@
+							<span class="paladin"><img src="graphic/index/bg-paladin.png" alt="" /></span>			</div>
+							<div id="content"> 
+					<div class="container-block"> 
+						<div class="container-top"></div> 
+						<div class="container"> 
+													<div class="info-block"> 
+								<h2>Tribal Wars</h2> 
+								<p>Tribal Wars is a browser-based game set in the Middle Ages. Every player controls a small village, striving for power and glory.</p> 
+ 
+									<a class="btn-kostenlos-anmelden" href="register.php">Register now for free!</a> 
+									<strong>Screenshots of the browser game:</strong> 
+									<ul class="screenshots"> 
+										<li><a href="#" onclick="Index.toggle_screenshot(1); return false;"><img src="graphic/index/tribalwars-map.png" alt="Browser game Tribal Wars: World map" /></a></li> 
+										<li><a href="#" onclick="Index.toggle_screenshot(2); return false;"><img src="graphic/index/tribalwars-rally-point.png" alt="Browser game Tribal Wars: The rally point" /></a></li> 
+										<li class="last"><a href="#" onclick="Index.toggle_screenshot(3); return false;"><img src="graphic/index/tribalwars-paladin.png" alt="Browser game Tribal Wars: The paladin" /></a></li> 
+									</ul> 
+								<br style="clear:both;" /> 
+								<strong style="padding-top:10px;">0 players already!</strong> 
+							</div> 
+						
+<div class="login-block"> 
+    <h2 style="text-align:left;margin-bottom:15px;">Tribal Wars - Login</h2> 
+	
+        <div id="world_selection" class="ar_login" style="display: none;"> 
+            <a href="#" onclick="$('#world_selection').hide();return false;" class="login_close"> 
+                <img src="graphic/login_close.png" alt="close" style="border:none" /> 
+            </a> 
+            <div class="servers-list-top"></div> 
+            <div id="servers-list-block"></div> 
+            <div class="servers-list-bottom"></div> 
+        </div> 
+ 
+    <form action="index.php?action=login&amp;server_list=1" method="post" id="login_form" onsubmit="return Index.login_submit();"> 
+        <div> 
+            <label for="user"> 
+                <strong >User name:</strong> 
+                <span > 
+                    <input id="user" name="user" class="text" type="text" value=""
+                           onkeydown="if (window.event && window.event.keyCode == 13) $('#login_button').trigger('click');"/> 
+                </span> 
+            </label> 
+            <label for="password"> 
+                <strong >Password:</strong> 
+                <span > 
+                    <input name="clear" type="hidden" value="true" /> 
+                    <input id="password" name="password" class="text" type="password"
+                           onkeydown="if (window.event && window.event.keyCode == 13) $('#login_button').trigger('click');"/> 
+                </span> 
+            </label> 
+            
+            <div id="non_script_login"> 
+	            <label for="server_select" id="server_select_label"> 
+	                <strong >World:</strong> 
+	                <select id="server_select" class="server_select" name="server" > 
+						                        <option value="en1" >World 1</option> 
+						                </select> 
+	            </label> 
+				<input type="submit" id="login_button" style="margin-bottom:10px; width:126px; float: right" value="Login"/> 
+			</div> 
+			<div id="js_login_button"  style="display:none"> 
+				<a href="#" onclick="$('#login_button').trigger('click'); return false;" class="login_button"> 
+					<span class="button_left"></span> 
+					<span class="button_middle">Login</span> 
+					<span class="button_right"></span> 
+				</a> 
+			</div>				
+ 
+            <br style="clear:both;"/> 
+            <label for="cookie" style="text-align:right;"> 
+                <input id="cookie" type="checkbox" name="cookie" value="true"  /> 
+					Remember my ID and password on this computer
+            </label> 
+            <p><a href="lost_pw.php">Lost password/Change password</a></p> 
+                    </div> 
+    </form> 
+</div> 
+ 
+ 
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		Index.load_login();
+	})
+</script> 
+ 
+ 
+						</div> 
+						<div class="container-bottom"></div> 

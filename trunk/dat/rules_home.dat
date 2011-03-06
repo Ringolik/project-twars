@@ -1,0 +1,386 @@
+					<span class="paladin"><img src="graphic/index/bg-paladin.png" alt="" /></span>			</div> 
+					<div class="container-block-full"> 
+		  			<div class="container-top-full"></div> 
+		  			<div class="container"> 
+				<div id="content" style="margin-left:130px; width: 650px;"> 
+					<h2>Rules</h2> 
+					<script type="text/javascript"> 
+	
+	/**
+	 * @jQuery
+	 */
+	function toggleRule(rule_number) {
+		$('#more_'+rule_number).slideToggle();
+		$('#link_'+rule_number).slideToggle();
+ 
+		return false;
+	}
+	
+</script> 
+ 
+ 
+<h4>§1) One account per player</h4> 
+<p>Each player is allowed only one account per game world, with the exception of the account sitting feature. Sharing your password with another player on any world you play is forbidden. Legal ways of taking over a new account, on the same world can be found <a href="http://forum.tribalwars.net/showthread.php?t=140613">here.</a>
+
+<br /><br />
+
+Operating a push account is forbidden. This is defined as regular resource transports from a weaker player to a stronger player.<br /> 
+ 
+<div id="more_1" style="display: none">	<h4>Examples:</h4>
+
+<ul>
+
+<li>Knowing, storing, or asking passwords for other accounts on worlds you play is 100% forbidden. If another player sends you their password, you must always report them; otherwise you risk your own account being banned.</li>
+
+<li>It is allowed for multiple people to co-play an account, provided they do not have access to any other account on the same world.</li>
+
+<li>You may not login to ANY other account using the other player's password on ANY world you play, even if it’s a family member. To be allowed to log into another account, they must set you as an account sitter using the Account Sitting feature.</li>
+
+<li>It is strictly forbidden to force entry to an account. Unsuccessful attempts on other players' accounts are logged and will be punished with the same severity.</li>
+
+<li>It is forbidden for more than one player to be logged in to an account at the same time. Manipulating your browser in order to be logged into an account when it would not normally be possible is forbidden.</li>
+
+
+
+</ul> 
+</div> 
+ 
+<span id="link_"> 
+	<a id="link_1" href="?rule=1" onclick="return toggleRule(1);" style="font-size: x-small">&raquo; more</a> 
+</span> 
+ 
+ 
+</p> 
+<h4>§2) Players sharing an Internet Connection</h4> 
+<p><p style="font-weight: bold">Warning: The game will automatically prevent you from sending the majority of illegal commands. However, there are still some scenarios where the game cannot detect that the command would be illegal. All players must still make sure they are not violating any rules before sending commands.</b></p>
+
+
+
+Definitions for this rule:
+
+
+
+<p><b>Interaction</b> – Sending attacks, support or resource transports to a player on the same connection.<br />
+
+<b>Coordination</b> – Attacking, supporting or sending resources to the same player, from two or more players sharing a connection.</p>
+
+
+
+<p>This rule applies to anybody that shares a computer or network with one or more players. A shared network could be one household, your job, or school. All players that knowingly share an internet connection regularly (for 3 days or longer) have to add each other using the Share Internet Connection feature. Accounts being sat do not need to do this.</p>
+
+
+
+<p>If you are only temporarily sharing the same connection (for less than 72 hours) then you do not have to add each other using the Shared Internet Connection feature.</p>
+
+
+
+<p>If you have registered a shared connection, then you are never allowed to interact with the player(s) you are sharing a connection with. Co-ordination within a 3-week period is forbidden if you are sharing a connection. This means that at least 3 weeks must have passed from the date of the last command sent by one player before another player on the connection can start sending commands to the same player.</p>
+
+
+
+<p>If you are temporarily sharing an internet connection (for less than 3 days), no interaction is allowed until 24 hrs after connection sharing has ended. No co-ordination is allowed until 24 hours after the connection sharing has ended.</p><br /> 
+ 
+<div id="more_2" style="display: none">	<h4>Examples:</h4>
+
+<ul>
+
+<li>It is not allowed to use an account in any way that profits another account on the same connection.</li>
+
+<li>Players sharing an internet connection are not allowed to attack, supply or support each other until 24 hours after the connection sharing has ended.</li>
+
+<li>Players who have registered a shared connection are not allowed to attack, support or send resources to the same player within a 3-week period.</li>
+
+<li>It is forbidden to use a third account to transfer resources or villages between accounts on the same internet connection. In that case all 3 accounts are breaking the rules.</li>
+
+<li>Players sharing an internet connection are allowed to attack different players from the same tribe.</li>
+
+<li>Players temporarily sharing a connection are not allowed to attack, support or send resources to the same player while the connection is being shared, and 24 hours after.</li>
+
+<li>It is forbidden to use an account on your connection to retaliate* against players on behalf of an account on the same connection.</li>
+
+</ul>
+
+<h4>Retaliation</h4>
+
+Retaliation from the same connection is illegal. This is when you attack a player who is already attacking someone on your connection, whether shared or sitting. These are just a few common examples of what is and isn't legal. Please submit a support ticket if you have any further questions. 
+
+<ul>
+
+<li>If a player attacks you, it is against the rules for another player on the same connection to retaliate on your behalf. Both accounts are breaking the rules.</li>
+
+<li>If accounts are sharing a connection (also via the sitting feature) and both are under attack by the same player, only one of the accounts may retaliate.</li>
+
+<li>If you are sitting accounts under attack, only the account under attack may retaliate. If you want to attack the player who is attacking an account you are sitting, you must wait until 24 hours after the sitting has ended.</li>
+
+
+
+</ul> 
+</div> 
+ 
+<span id="link_"> 
+	<a id="link_2" href="?rule=2" onclick="return toggleRule(2);" style="font-size: x-small">&raquo; more</a> 
+</span> 
+ 
+ 
+</p> 
+<h4>§3) Account sitting</h4> 
+<p><p>Account sitting is a temporary way to watch someone's account while they cannot log in. While a player is account sitting for another player, no interactions or co-ordination is allowed between any accounts on the account sitter's internet connection, and for a period of 24 hours after the sitting has been ended or transferred. This includes all accounts being account sat by players on that connection.</p>
+
+
+
+<p>It is not allowed to sit an account and use it just to push other accounts. Accounts that are clearly used as push accounts in this way will be banned.</p>
+
+
+
+<p>Players and sitters are equally responsible for the actions of any sat account. Make sure you can trust the person you choose as sitter or whose account you are sitting.</p>
+
+
+
+<p>A sat account must be played for their own benefit. It is not allowed to abuse account sitting. Account sitters that intentionally destroy or seriously damage an account they are sitting will be punished.</p>
+
+
+
+<p>We will punish the account sitter if we see that it was the clear intention to ruin the account owners work against his instructions, we will not be able to repair the damage done to the account, so please make sure you always choose a responsible account sitter.</p>
+
+
+
+<p>Accounts being sat are temporarily sharing a connection with the sitter and other accounts on the account sitter's connection. Therefore, everything stated in rule 2 must be followed.</p>
+
+<br /> 
+ 
+<div id="more_3" style="display: none">	<h4>Examples:</h4>
+
+<ul>
+
+<li>It is allowed for you to attack and conquer villages with the account you are account sitting.</li>
+
+<li>It is never allowed to send resources to another player from any account you are sitting.</li>
+
+<li>You are not allowed to write to a player to find out if they are online on behalf of another account on the same connection.</li>
+
+<li>It is not allowed to use an account in any way that profits another account on the same connection.</li>
+
+<li>An account sitter may not attack or support the same player from his own account and from the account he is sitting as long as sitting is active. This is illegal even if there is more than 24 hours between the attacks. The same player may only be attacked when sitting has been ended for at least 24 hours.</li>
+
+<li>Accounts being sat by the same player are not allowed to interact or coordinate, while the account sitting is active, and for 24 hours after.</li>
+
+<li>It is not allowed to attack, support or send resources to any account that is sat by someone on your internet connection.</li>
+
+<li>It is forbidden to pass on troop or building information about an account you are sitting.</li>
+
+
+
+</ul>
+
+
+
+<h4>Long Term Sitting</h4>
+
+ 
+
+<p>Permanent sitting of accounts is against the rules. Accounts that are sat with no owner that is returning are considered Permanent Sitting. If the account owner decides that he/she will not return to the game, the account may not be played further by an account sitter, and steps must be taken to end the sitting (optionally gifting the villages first).</p>
+
+
+
+<p>If an account has an owner that is coming back, and you know when the owner will be back it is acceptable to sit. Accounts that are sat long-term are subject to restrictions.</p>
+
+
+
+<p>
+
+If an account is sat for 60 out of the last 120 days, the account will be a "limited" account. The account sitter will not be able to attack or support other players or send any resources. Any account sat over 120 days without a reason may have the sitting terminated by the support team.</p> 
+</div> 
+ 
+<span id="link_"> 
+	<a id="link_3" href="?rule=3" onclick="return toggleRule(3);" style="font-size: x-small">&raquo; more</a> 
+</span> 
+ 
+ 
+</p> 
+<h4>§4) Merging of accounts</h4> 
+<p>It is generally allowed for a player to allow one or more other players to take over the accounts villages without a fight, provided that the game rules are followed. Villages still have to be taken over by ennoblement; there is no way to just transfer villages to another account.
+
+However, accounts on the same internet connection may not merge. This includes accounts that have previously been played mostly from the same internet connection.
+
+<br /> 
+ 
+<div id="more_4" style="display: none">	
+</div> 
+ 
+ 
+ 
+</p> 
+<h4>§5) Communication</h4> 
+<p><p>Insulting other players and the use of language in an abusive/offensive context is forbidden. </p>
+
+
+
+<p>We do not accept profiles, player names, village names or any other publications that the Administration finds to be illegal, insulting, threatening, abusive, real-life-aggressive, sexual, politically incorrect, right extreme, religiously fanatic, racist or in any way inappropriate.</p>
+
+
+
+<p>Advertising other games or moneymaking sites, or posting links to inappropriate content is forbidden.</p>
+
+
+
+<p>Phishing or blackmailing players for passwords in any way is forbidden. Spamming other players with forwarded reports or constant in-game mails can be seen as abusive and is illegal.</p>
+
+<br /> 
+ 
+<div id="more_5" style="display: none">	<h4>Examples:</h4>
+
+<ul>
+
+<li>It is allowed to refer to a player as a beginner (noob) and to criticize their way of playing using appropriate language.</li>
+
+<li>It is allowed to blackmail a player for resources in-game through threatening their loss of villages due to potential in-game attacks.</li>
+
+<li>Tribe dukes are responsible for their tribal profile, forum, name and tribe tag. If any part of a tribe is inappropriate, the dukes are held responsible.</li>
+
+<li>It is against the rules to impersonate any staff member.</li>
+
+<li>It is forbidden to post pornographic links in the profile or on any other medium.</li>
+
+<li>Racist, illegal, discriminatory or inappropriate names will lead to an immediate game ban.</li>
+
+<li>Any attempt of phishing will be strongly punished. This includes phishing for account information (like passwords) and ingame information (like troop counts). </li>
+
+<li>Using any profanity, insulting language, or being abusive towards any staff member in the support system is grounds for a complete ban of your account with no appeal.</li>
+
+<li>We ask players to not use account names that include whole email addresses or full names, for player safety.</li>
+
+
+
+</ul> 
+</div> 
+ 
+<span id="link_"> 
+	<a id="link_5" href="?rule=5" onclick="return toggleRule(5);" style="font-size: x-small">&raquo; more</a> 
+</span> 
+ 
+ 
+</p> 
+<h4>§6) Account trading</h4> 
+<p>It is not allowed to play accounts for commercial purposes. It is not allowed to sell, buy or offer accounts or parts of accounts in exchange for Premium points or any other outside benefit. Trades involving more than one game world are also forbidden.<br /> 
+ 
+<div id="more_6" style="display: none">	<h4>Examples:</h4>
+
+<ul>
+
+<li>Offering to sell or buy accounts or parts of accounts (including troops, resources or villages) is forbidden.</li>
+
+<li>It is forbidden to offer resources for money or premium points.</li>
+
+<li>It is forbidden to offer or accept premium points for any in game service such as spying on another tribe.</li>
+
+<li>It is allowed to offer your army in exchange for resources on the same world.</li>
+
+<li>It is forbidden to offer money or premium points as a reward for attacks, supports or resource transports to any player, or to ask for payment in return for those services. A reward cannot be offered for anything that might incite attacks or any actions against other players (for example, contests to see who can gain the most opponents defeated score).</li>
+
+<li>It is forbidden to blackmail other players for premium points.</li>
+
+<li>Offering premium points for external resources (such as scripts, graphic packs) is permitted.</li>
+
+<li>If you are unsure about whether a contest is allowed, you should always submit a support ticket first.</li>
+
+
+
+</ul>
+
+ 
+</div> 
+ 
+<span id="link_"> 
+	<a id="link_6" href="?rule=6" onclick="return toggleRule(6);" style="font-size: x-small">&raquo; more</a> 
+</span> 
+ 
+ 
+</p> 
+<h4>§7) Bots and Scripts</h4> 
+<p><p>Tribal Wars should be played with a normal browser only. Bots, browser add-ons and other applications that automate game activities are forbidden. All Greasemonkey scripts are forbidden.</p>
+
+
+
+<p>Premium players are permitted to add approved JavaScript commands to their quick bar. These scripts are allowed to help players by doing things such as automatically filling in forms (like troop recruitment). However, they may not perform more than one action per click.</p>
+
+
+
+<p>If you are not sure if a script or tool is allowed you should always ask the support team first. In addition to this, we keep <a href="http://forum.tribalwars.net/showthread.php?t=218376" target="_blank">this</a> thread updated with all legal quick bar scripts. If you have a script that doesn't appear here, you must submit a ticket for approval or ask in the scripts forum before installing it.</p>
+
+
+
+<p>Tools are permitted to use our world data provided they request it no more than once per hour.</p><br /> 
+ 
+<div id="more_7" style="display: none">	<h4>Examples:</h4>
+
+<ul>
+
+<li>The use of external tools (such as http://www.twstats.com) is allowed, provided that they do not interact with the game in any way.</li>
+
+<li>All scripts in <a href="http://forum.tribalwars.net/showthread.php?t=78281" target="_blank">this topic</a> have been approved can be used.</li>
+
+<li>It is expressly forbidden to offer or use any kind of tool that mimics premium account features.</li>
+
+<li>It is forbidden to install any kind of script that send troops automatically or with fewer clicks.</li>
+
+<li>It is forbidden to create, offer or use any tool that automatically sends information from your account in case of an attack or other event.</li>
+
+<li>It is forbidden to offer or use tools that automatically add information to the map or other areas.</li>
+
+<li>It is forbidden to use any script that focuses or clicks the 'attack' or 'support' buttons and/or the 'ok' button on the command confirmation page. That is something each and every player has to do without a script.</li>
+
+</ul> 
+</div> 
+ 
+<span id="link_"> 
+	<a id="link_7" href="?rule=7" onclick="return toggleRule(7);" style="font-size: x-small">&raquo; more</a> 
+</span> 
+ 
+ 
+</p> 
+<h4>§8) Language</h4> 
+<p><p>Tribal Wars is an English game. The use of other languages in game is forbidden. This means all profiles, mails, forum posts and any other publication must be in English.</p>
+
+
+
+<p>A short phrase in another language is permitted, provided that this is translated to English either directly following or preceding it.</p>
+
+
+
+<p>Creating a tribe exclusively for one nationality or language is strictly forbidden and may result in the tribe being disbanded.</p>
+
+
+
+<p>Support tickets must also be created in English, otherwise we will not reply.</p>
+
+<br /> 
+ 
+<div id="more_8" style="display: none">	
+</div> 
+ 
+ 
+ 
+</p> 
+<h4>§9) Miscellaneous</h4> 
+<p><ul>
+
+<li>Anything you write may be used as evidence against you in an appeal. We will not accept it if you later say that you were joking.</li>
+
+<li>Encouraging or tricking others into breaking the rules is strictly prohibited.</li>
+
+<li>If you experience a bug you must immediately report it to the support team. Failing to do so may result in a punishment.</li>
+
+<li>Inactive accounts may be deleted after a period of 14 days.</li>
+
+<li>Banned accounts will be deleted in 14 days in the majority of cases.</li>
+
+<li>We do not refund premium to players who are banned for breaking our rules.</li>
+
+</ul><br /> 
+ 
+<div id="more_9" style="display: none">	
+</div> 
+ 
+ 
+ 
+</p> 

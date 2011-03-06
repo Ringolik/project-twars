@@ -1,0 +1,114 @@
+<?php
+@$mode = $_GET['mode'];
+?>
+<span class="paladin"><img src="graphic/index/bg-paladin.png" alt="" /></span>			</div> 
+<div id="content"> 
+				<div id="screenshot" style="visibility:hidden" onclick="hide_screenshot();"> 
+					<div id="screenshot_image"></div> 
+				</div> 
+				<div class="container-block-full"> 
+					<div class="container-top-full"></div> 
+					<div class="container"> 
+					<?php
+					switch($mode) {
+					case @ask_server:
+						?>
+					<div class="info-block register"> 
+						<h2 class="register">Which world do you want to log on to?</h2>																				<p><a href="register.php?mode=new_account&amp;server=en1" style="font-size: 18px;"> &raquo; World 1 (advised)</a></p> 
+							<br /> 
+													
+						<table> 
+							<tr> 
+								<th>World:</th> 
+								<th>Start</th> 
+								<th>Number of players</th> 
+								<th>Description</th>							</tr> 
+														<tr class="lit"> 
+								<td class="lit-item" width="100" align="center"> 
+									<a href="register.php?mode=new_account&amp;server=en1"><span class="world_button_active">World 1</span></a> 
+								</td> 
+								<td class="lit-item"> 
+									6 March 2011								</td> 
+								<td class="lit-item"> 
+																											0 players
+																										</td> 
+																<td class="lit-item" width="300"> 
+									<h4>World speed:</h4>
+
+
+
+<b>World speed:</b> 1.0<br />
+
+<b>Unit speed:</b> 1.0
+
+
+
+<h4>Units</h4>
+
+
+
+All.
+
+
+
+<h4>Other settings</h4>
+
+
+
+<ul>
+
+<li>TO DO.</li>
+
+</ul>
+								</td> 
+															</tr> 
+															</table>
+															</div>
+								<?php
+								break;
+					default:
+					?>
+						<div class="info-block register" > 
+							<h2 class="register">Join World 1<a href="register.php?mode=ask_server">&raquo; Select another world</a></h2> 
+							<h3>Every player can only have one account per game world!</h3> 
+							<p>If you already have a Tribal Wars account on another server or used to have an account, a new registration is usually not necessary. Simply log in at the <a href="./">Homepage</a>!</p> 
+														<h3>Important Information:</h3> 
+							<p style="margin-top:0;">Please make sure that you are using a <b>REAL</b> email address, otherwise your account will not be validated! You can only have 1 account per email address.</p> 
+														<h3 class="error"></h3> 
+ 
+							
+							<br/> 
+ 
+							
+							<form id="register_form" action="register.php?mode=new_account&amp;server=en55&amp;action=validate" method="post"> 
+								
+								<label for="name">User name:</label><br /> 
+																<input id="name" name="name" type="text" value="" onchange="Register.checkInput('name', this.value)" /> 
+								<span id="name_error" class="error"></span><br /> 
+								<label for="password">Password:</label><br /> 
+																<input id="password" name="password" type="password" value="" onchange="Register.checkInputEqual('name', this.value);Register.checkInput('password', this.value)" /> 
+								<span id="password_error" class="error"></span> <span id="password_errors" class="error"></span> <span id="password_info" class="info"></span><br /> 
+ 
+								<label for="password_confirm">Repeat password:</label><br /> 
+																<input id="password_confirm" name="password_confirm" type="password" value="" onchange="Register.checkInputEqual('password', this.value)" /> 
+								<span id="password_confirm_error" class="error"></span><br /> 
+ 
+								<label for="email">E-Mail:</label><br /> 
+								<span class="small">(Needed for activation)</span><br /> 
+								<div id="email_error" class="error" style="float:right;width:300px;"></div> 
+								<input id="email" name="email" type="text" value="" size="40" onchange="Register.checkInput('email', this.value)" /><br /> 
+ 
+								
+								<div><input id="agb" name="agb" type="checkbox" style="margin-bottom:0;"/><label for="agb">I accept the terms and conditions</label> 
+								<label for="agb_link"><a href="javascript:popup_scroll('http://legal.innogames.de/?type=agb&amp;game=staemme&amp;lang=en&amp;market_id=en', 920, 600)">(Show terms and conditions)</a></label></div><br /> 
+ 
+								
+								<input id="register_button" type="submit" value="Register" style="margin-top:8px;" /> 
+							</form> 
+						</div> 
+						<?php
+						break;
+								}
+								?>
+					</div> 
+					<div class="container-bottom-full"></div> 
