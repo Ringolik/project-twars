@@ -1,0 +1,1 @@
+This is a replica of the world-wide famous browser game - Tribal Wars. This is for learning purposes only.
